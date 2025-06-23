@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "poppins" , "arial";
+   
+   
+  
+
+}
+.home-img{
+     width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 2px 5px 10px rgba( 0, 0, 0, 50%);
+    cursor: pointer;
+    filter: blur(0.5px) brightness(85%);
+    transition: all 1s ease;
+     animation: bounce 2s infinite;
+    &:hover{
+        filter: blur(0)
+                brightness(100%);
+    }
+    
+}
+.home-img  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+
+}
+@keyframes bounce{
+    0% ,20% ,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+.porfolio-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.text-violet {
+  color: #3b0087; 
+}
+.text-yellow{
+    color: #f7df1e ;
+    
+}
+.text-orange{
+     color:  #fd971f;
+}
+
+.fa-facebook{
+    &:hover
+    {
+        color: #1502a4;
+
+    } 
+}
+.fa-twitter{
+    &:hover{
+        color: rgb(0, 185, 185);
+    }
+}
+.fa-instagram{
+    &:hover{
+        color: rgb(255, 0, 149);
+    }
+}
+.fa-linkedin{
+    &:hover{
+        color: rgb(55, 128, 255);
+    }
+}
+.fa-github{
+    &:hover{
+        color: rgb(4, 4, 4);
+    }
+}
+.fa-telegram{
+    &:hover{
+        color: rgb(55, 128, 255);
+    }
+}
+@media (max-width:480px){
+    .home-img{
+        width: 350px;
+        height: 350px;
+    }
+}
